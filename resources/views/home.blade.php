@@ -1,5 +1,7 @@
 @extends('layout.base')
 
 @section('content')
-    ciao
+    @foreach($movie as $item)
+        {{$item->title}}
+    @endforeach
 @endsection
